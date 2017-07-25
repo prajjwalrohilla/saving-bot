@@ -1,0 +1,84 @@
+<!Doctype html>
+<html lang="en">
+<head>
+
+  <title>Prajjwak Rohilla</title>
+
+ <meta charset="utf-8"> 
+ <meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="css/stylebot.css">
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<script src="js/jquery-3.2.1.min.js"></script>
+
+
+</head>
+<body>
+<div id="particles-js"></div>
+
+    
+<div class="showit"  >
+    <p>  enter your text in text area and then click on the right button </p>
+    &nbsp;
+    <p  >this is a saving bot one can save by writitg save first then your keyword and then what  you want to include in it </p>
+    &nbsp;
+    <p  >and to find your saved data write find
+    and then your keyword and hopefully bot will reply you back</p>
+    </div>
+
+<div class="outsidebox">
+    
+    
+     
+      <ul >
+      
+          
+       <% for(var i=0;i<textput.length;i++){%>
+       <% if(side[i]==0){ %>
+        <li  class="rig"><%= textput[i]%></li>
+        <% } %>
+        <% if(side[i]==1){ %>
+         <li  class="lef"><%= textput[i]%></li>
+          <% } %>
+     <%  }%>
+        
+    
+      
+
+    </ul>
+
+   <div class="forum" >
+    
+<form  method="POST" action="/">
+
+
+
+     <textarea  type="text" placeholder="input your text"class="in" onkeyup="check()" onblur="check2()"  id="inpu" name="tod"  rows="2" cols="19" wrap="soft" style=" resize:none;"></textarea>
+    <button class="butonit"  type="submit" ><i class="fa fa-check-square"></i></button>
+    
+    
+    
+    </form>
+    
+ 
+    </div>
+    
+    
+    
+    
+<div>
+
+
+<p ><span class="inst">(instructions)</span></p>
+
+
+
+
+<script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+<script src="js/animbot.js"></script>
+
+    
+
+</body>
+</html>
